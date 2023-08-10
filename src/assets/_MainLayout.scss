@@ -1,0 +1,58 @@
+body {
+    margin: 0 auto;
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+    background-color: #1b2330;
+}
+
+.main-layout {
+    // max-width: 800px;
+    padding: 1em;
+    margin: auto;
+
+    display: grid;
+    // grid-template-columns: 1fr;
+    // grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "main-header main-header main-header"
+        "intro intro intro"
+        "advantages advantages advantages"
+        "mid-container mid-container mid-container"
+        "recommendations recommendations recommendations"
+        "main-footer main-footer main-footer";
+}
+
+.main-header {
+    grid-area: main-header;
+}
+
+.intro {
+    grid-area: intro;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.advantages {
+    grid-area: advantages;
+}
+
+.mid {
+    grid-area: mid-container;
+
+    display: flex;
+
+}
+
+.recommendations {
+    grid-area: recommendations;
+}
+
+.main-footer {
+    grid-area: main-footer;
+}
